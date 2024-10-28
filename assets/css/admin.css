@@ -1,0 +1,75 @@
+
+.loadingbox{
+position: absolute;
+height: 100%;
+width: 100%;
+background: #13121261;
+z-index: 9999999;
+text-align: center;
+top:0;
+}
+.lds-dual-ring {
+display: inline-block;
+width: 80px;
+height: 80px;
+}
+
+.lds-dual-ring:after {
+content: " ";
+display: block;
+width: 64px;
+height: 64px;
+margin: 8px;
+border-radius: 50%;
+border: 6px solid #fff;
+border-color: #fff transparent #fff transparent;
+animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+}
+
+/* new css for audio editor*/
+
+#audio_data {
+margin-left: -180px;
+border: none !important;
+}
+.audiolayout {
+background: #fff !important;
+border: 1px solid #ccc;
+padding-left: 10px;
+margin-top: -7px;
+}
+#poststuff #audio_data .inside {
+margin: 6px 0 0 0;
+padding: 0 0 0 180px;
+
+}
+#audio_data .postbox-header {
+margin-left: 180px;
+border: 1px solid #ccc;
+
+}
+#audio_data .progress.progress-striped.active {
+visibility: hidden;
+}
+
+.is-fullscreen-mode #audio_data .postbox-header,.is-fullscreen-mode #audio_data{
+	    margin-left: 0px !important;
+}
+.is-fullscreen-mode #poststuff #audio_data .inside{
+	padding: 0px !important;
+}
+.wp-core-ui .button-primary.disabled,.wp-core-ui .button.disabled{
+
+    background: #2271b1 !important;
+    border-color: #2271b1 !important;
+    color: #fff !important;
+    opacity: 1 !important;
+    }
